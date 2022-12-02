@@ -16,14 +16,14 @@
 <body>
     <header id="header-contacto" class="">
         <!-- BARRA DE NAVEGACION -->
-        <nav class="navbar navbar-expand-md ">
+        <nav class="navbar navbar-expand-md pb-4 ">
             <div class="container-fluid">
                 <a href="../index.html"><img src="../img/logo_size_invert.jpg" alt="RUV Desing" class="logo-nav"></a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
                     data-bs-target="#MenuDesplegable">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div id="MenuDesplegable" class="collapse navbar-collapse justify-content-end ">
+                <div id="MenuDesplegable" class="collapse navbar-collapse justify-content-end">
                     <ul class="barra-navegacion navbar-nav ms-3 text-center">
                         <li class="nav-item"><a class="nav-link" href="../index.html">HOME</a></li>
                         <li class="nav-item"><a class="nav-link" href="./proyectos.html">PROYECTOS</a></li>
@@ -35,23 +35,35 @@
             </div>
         </nav>
     </header>
-    <main>
-        <h1>SOBRE RUV Desing</h1>
-
-        <img src="../img/logoVale.png" alt="Sobre RUV Desing">
-        <img src="" alt="Valentina Rui">
-
+    <main class="">
+        <div class="container p-3">
+            <h1 class="p-3 text-center fw-bold fst-italic border border border-3 rounded-pill shadow ">Sobre
+                RUV Desing</h1>
+        </div>
         <section>
-            <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed neque autem rerum cupiditate odio nisi
-                    error facilis alias. Pariatur ea unde soluta distinctio consectetur omnis, est molestiae laborum
-                    dolores? Dolore! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, non. Obcaecati
-                    velit aperiam, culpa eveniet inventore, dolores quos enim reprehenderit, optio aliquid tenetur
-                    earum. Expedita voluptatum laborum voluptate labore maiores. Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Dolor, quos expedita dolore quibusdam minima tempora nihil ipsum maiores magni
-                    atque totam laboriosam, iste perferendis, debitis sit esse deserunt labore nostrum.
-                </p>
-            </article>
+            <div class="container p-2 d-flex justify-content-center">
+                <img src="../img/ruv.png" class="img-fluid" alt="Sobre RUV Desing">
+            </div>
+            <div class="container d-flex justify-content-center">
+                <img src="../img/foto-vale.png" class="img-fluid" alt="Valentina Rui">
+            </div>
+        </section>
+        <section class="container p-3">
+            <div class="card">
+                <div class="card-body border border-1">
+                    <p class="lh-lg text-center">
+                        Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Sed neque autem rerum cupiditate odio nisi
+                        error facilis alias. Pariatur ea unde soluta distinctio consectetur omnis, est molestiae laborum
+                        dolores? Dolore! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, non. Obcaecati
+                        velit aperiam, culpa eveniet inventore, dolores quos enim reprehenderit, optio aliquid tenetur
+                        earum. Expedita voluptatum laborum voluptate labore maiores. Lorem, ipsum dolor sit amet
+                        consectetur
+                        adipisicing elit. Dolor, quos expedita dolore quibusdam minima tempora nihil ipsum maiores magni
+                        atque totam laboriosam, iste perferendis, debitis sit esse deserunt labore nostrum.
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="h-auto d-md-flex justify-content-md-between">
@@ -69,7 +81,7 @@
             </div>
         </div>
 
-        <form action="" class="container-fluid p-2 d-flex flex-column align-items-center col-md-4 m-0">
+        <form action="" class="container-fluid p-2 d-flex flex-column align-items-center col-md-4 m-0 text-center">
             <label for="novedades">Ingrese su email para recibir novedades sobre nosotros</label>
             <input type="email" class="form-control" id="novedades" placeholder="nombre@ejemplo.com">
             <input type="submit" class="btn btn-dark" value="Recibir novedades">
