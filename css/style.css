@@ -224,3 +224,8 @@ footer form input {
         transform: scale3d(1, 1, 1);
     }
 }
+
+/* contacto */
+header {
+    z-index: 1000
+}
