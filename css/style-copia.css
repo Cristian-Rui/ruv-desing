@@ -22,19 +22,18 @@ ul {
 /* estilo del header */
 
 header {
-    background-color: #D9D9D9;
-    height: 12vh;
+    background-color: #D9D9D9;   
+    z-index: 1000;
+    /* height: 12vh; no se le aplica altura a esto sino a la imagen*/
 }
 
 header div div {
     background-color: #D9D9D9;
 }
+/* innecesario por que le aplico fondo al header */
 
-main h1 {
-    color: #395144;
-}
 
-.logo-nav {
+.header__img {
     height: 10vh;
     border-radius: 360px;
 }
@@ -96,6 +95,11 @@ footer form input {
 }
 
 /* estructura del main con grid */
+
+main h1 {
+    color: #395144;
+}
+
 .main-home {
     background-color: #EEEEEE;
     display: grid;
@@ -193,9 +197,7 @@ footer form input {
 }
 
 /* contacto */
-header {
-    z-index: 1000
-}
+
 
 .fondo-azul {
     background-color: aqua;

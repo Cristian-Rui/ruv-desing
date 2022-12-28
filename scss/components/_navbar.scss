@@ -1,0 +1,44 @@
+/* estilo del header */
+.header {
+    background-color: $color-primario;
+    z-index: 1000;
+
+
+    &__img {
+        height: 10vh;
+        border-radius: 360px;
+    }
+
+    &__link {
+        font-style: italic;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: $color-textos;
+    }
+}
+
+.pulse:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
