@@ -9,6 +9,7 @@ html {
   font-size: 16px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
+  color: #395144;
 }
 
 a {
@@ -21,16 +22,28 @@ ul {
 
 main h1 {
   color: #395144;
+  font-size: 2rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: bold;
 }
 
 main {
   background-color: #EEEEEE;
 }
 
+h2 {
+  color: #395144;
+  font-size: 2rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: bold;
+}
+
 /* estilo del header */
 .header {
   background-color: #D9D9D9;
   z-index: 1000;
+  border-bottom: solid;
+  border-color: #AA8B56;
 }
 .header__img {
   height: 10vh;
@@ -44,25 +57,19 @@ main {
 }
 
 .pulse:hover {
-  -webkit-animation-name: pulse;
   animation-name: pulse;
-  -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
 @keyframes pulse {
   0% {
-    -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
   50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
     transform: scale3d(1.05, 1.05, 1.05);
   }
   100% {
-    -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 }
@@ -71,6 +78,8 @@ footer {
   background-color: #D9D9D9;
   height: 25vh;
   padding: 0px 20px;
+  border-top: solid;
+  border-color: #AA8B56;
 }
 footer ul {
   gap: 10px;
@@ -108,6 +117,9 @@ footer form input {
   color: #D9D9D9;
   font-size: 0rem;
 }
+.home__logo {
+  z-index: 900;
+}
 
 .seccion {
   background-color: #D9D9D9;
@@ -116,6 +128,28 @@ footer form input {
   color: #395144;
 }
 
+@media (min-width: 768px) {
+  .seccion__contacto {
+    border-radius: 0px 0px 0px 375px;
+    width: 75%;
+    height: 100%;
+    box-shadow: -19px 31px 84px 57px rgba(0, 0, 0, 0.21);
+  }
+  .seccion__preguntas {
+    width: 80%;
+    height: 150%;
+    border-radius: 0% 500px 0% 0%;
+    box-shadow: 50px 0px 50px 0px rgba(0, 0, 0, 0.21);
+  }
+  .seccion__preguntas .seccion__link {
+    width: 70%;
+  }
+}
+@media (min-width: 1080px) {
+  .seccion__contacto {
+    width: 60%;
+  }
+}
 .tarjeta {
   padding: 20px;
   margin: 20px;

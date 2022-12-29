@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/favicon.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
     <title>RUV Desing-Preguntas</title>
 </head>
 
@@ -28,13 +29,18 @@
                     </button>
                     <div id="MenuDesplegable" class="collapse navbar-collapse justify-content-end ">
                         <ul class="header__navbar navbar-nav ms-3 text-center">
-                            <li class="nav-item pulse"><a class="header__link nav-link" href="../index.html">HOME</a></li>
-                            <li class="nav-item pulse"><a class="header__link nav-link" href="./proyectos.html">PROYECTOS</a></li>
-                            <li class="nav-item pulse"><a class="header__link nav-link" href="./nosotros.html">SOBRE NOSOTROS</a>
+                            <li class="nav-item pulse"><a class="header__link nav-link" href="../index.html">HOME</a>
                             </li>
-                            <li class="nav-item pulse"><a class="header__link nav-link" href="./preguntas.html">PREGUNTAS
+                            <li class="nav-item pulse"><a class="header__link nav-link"
+                                    href="./proyectos.html">PROYECTOS</a></li>
+                            <li class="nav-item pulse"><a class="header__link nav-link" href="./nosotros.html">SOBRE
+                                    NOSOTROS</a>
+                            </li>
+                            <li class="nav-item pulse"><a class="header__link nav-link"
+                                    href="./preguntas.html">PREGUNTAS
                                     FRECUENTES</a></li>
-                            <li class="nav-item pulse"><a class="header__link nav-link" href="./contacto.html">CONTACTO</a></li>
+                            <li class="nav-item pulse"><a class="header__link nav-link"
+                                    href="./contacto.html">CONTACTO</a></li>
                         </ul>
                     </div>
                 </div>
@@ -42,53 +48,55 @@
         </div>
     </header>
     <main>
-        <div>
+        <div class="container text-center">
             <h1>PREGUNTAS FRECUENTES SOBRE EL DISEÑO</h1>
             <p>en esta seccion queremos ayudarte a entender cual es nuestro trabajo y de que formas un diseñador
                 industrial puede ayudar en la vida cotidiana</p>
         </div>
 
-        <section>
-            <article class="cards-preguntas">
-                <h2>¿para que sirve el diseño industrial?</h2>
-                <p>el diseño industrial esta en todas partes y se nos presenta en nuestra vida cotidiana todo el tiempo.
+        <div class="card container p-4 my-2 d-flex flex-column justify-content-center align-items-center">
+            <div class="card__body text-center">
+                <h2 class="card__titulo">¿Para que sirve el diseño industrial?</h2>
+                <p class="card_texto">El diseño industrial está en todas partes y se nos presenta en nuestra vida
+                    cotidiana todo el tiempo.
                     En el siguiente video podras entender mejor esto que te planteamos.</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/oqoFheUn5CU"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </article>
+            </div>
+           
+            <iframe class="w-80 h-100" src="https://www.youtube.com/embed/oqoFheUn5CU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
 
-            <article class="cards-preguntas">
-                <h2>¿para que sirve el diseño industrial?</h2>
-                <p>el diseño industrial esta en todas partes y se nos presenta en nuestra vida cotidiana todo el tiempo.
-                    En el siguiente video podras entender mejor esto que te planteamos.</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/oqoFheUn5CU"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </article>
-
-            <article class="cards-preguntas">
-                <h2>¿para que sirve el diseño industrial?</h2>
-                <p>el diseño industrial esta en todas partes y se nos presenta en nuestra vida cotidiana todo el tiempo.
-                    En el siguiente video podras entender mejor esto que te planteamos.</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/oqoFheUn5CU"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </article>
-
-            <article class="cards-preguntas">
-                <h2>¿para que sirve el diseño industrial?</h2>
-                <p>el diseño industrial esta en todas partes y se nos presenta en nuestra vida cotidiana todo el tiempo.
-                    En el siguiente video podras entender mejor esto que te planteamos.</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/oqoFheUn5CU"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </article>
-        </section>
+        <div class="card container p-4 my-2 d-flex justify-content-center">
+            <div class="card__body row col-12 text-center">
+                <h2 class="card__titulo">¿Como trabajamos en RUV desing?</h2>
+                <p class="card__texto">DE LA IDEA A LA FABRICACION EN 3 ETAPAS</p>
+            </div>
+            <div class="row">
+                <div class="d-flex flex-column justify-content-center align-items-center col-md-4 text-center">
+                    <img src="../img/pensamiento-diseno.png" alt="ilustracion primer etapa" class="img-fluid">
+                    <h3>PENSAMIENTO DE DISEÑO</h3>
+                    <p>Generamos ideas innovadoras, centradas en entender y dar soluciones a lo que la gente quiere y
+                        necesita.
+                        Investigamos para descubrir nuevos escenarios que definan la oportunidad.</p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center col-md-4 text-center">
+                    <img src="../img/prototipado.png" alt="ilustracion segunda etapa" class="img-fluid">
+                    <h3>DISEÑO Y PROTOTIPOS</h3>
+                    <p>Planteamos soluciones efectivas que transforman las ideas en objetos tangibles.
+                        Construimos prototipos para iterar, aprender y actuar con agilidad para asegurar la efectividad
+                        del diseño.</p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center col-md-4 text-center">
+                    <img src="../img/ingenieria.png" alt="ilustracion tercer etapa" class="img-fluid">
+                    <h3>INGENIERÍA Y DOCUMENTACIÓN</h3>
+                    <p>Implementamos nuestros conocimientos en proceso productivos para una correcta selección de
+                        tecnologías.
+                        Generamos la documentación técnica, gestión de proveedores y seguimiento de fabricación.</p>
+                </div>
+            </div>
+        </div>
 
     </main>
     <footer class="h-auto d-md-flex justify-content-md-between">
