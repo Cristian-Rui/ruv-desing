@@ -1,9 +1,16 @@
 .tarjeta {
     padding: 20px;
     margin: 20px;
-    background-color:$color-primario;
-    border: solid ;
+    background-color: $color-primario;
+    border: solid;
     border-color: $color-detalles;
+
+    &__descripcion {
+        font-size: 1rem;
+        width: auto;
+        height: 50px;
+        text-align: center;
+    }
 }
 
 .proyectos__presentacion {

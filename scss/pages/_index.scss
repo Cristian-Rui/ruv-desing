@@ -1,8 +1,8 @@
 /* estilos del inndex */
 .home {
-    
+
     &__titulo-principal {
-        color: #D9D9D9;
+        color:$color-primario;
         font-size: 0rem;
     }
 
@@ -13,26 +13,31 @@
 
 .seccion {
     background-color: $color-primario;
-    
+
     &__link {
-    color: $color-textos;
+        color: $color-textos;
+
+        p {
+            color: $color-textos;
+        }
     }
 }
 
 @media(min-width:768px) {
-// hacer hasta 1080
+
+    // hacer hasta 1080
     .seccion__contacto {
         border-radius: 0px 0px 0px 375px;
         width: 75%;
         height: 100%;
-        box-shadow: -19px 31px 84px 57px rgba(0,0,0,0.21);
+        box-shadow: -19px 31px 84px 57px rgba(0, 0, 0, 0.21);
     }
-    
+
     .seccion__preguntas {
         width: 80%;
         height: 150%;
         border-radius: 0% 500px 0% 0%;
-        box-shadow: 50px 0px 50px 0px rgba(0,0,0,0.21);
+        box-shadow: 50px 0px 50px 0px rgba(0, 0, 0, 0.21);
 
         .seccion__link {
             width: 70%;
@@ -41,8 +46,8 @@
 
 }
 
-@media(min-width:1080px){
-    .seccion__contacto{
+@media(min-width:1080px) {
+    .seccion__contacto {
         width: 60%;
     }
 }

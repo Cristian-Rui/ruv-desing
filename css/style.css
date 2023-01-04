@@ -109,7 +109,8 @@ footer form input {
 }
 
 .decoracion {
-  background-color: #D9D9D9;
+  background: rgb(170, 139, 86);
+  background: linear-gradient(0deg, rgba(170, 139, 86, 0.8743872549) 0%, rgb(217, 217, 217) 30%, rgb(238, 238, 238) 50%);
 }
 
 /* estilos del inndex */
@@ -125,6 +126,9 @@ footer form input {
   background-color: #D9D9D9;
 }
 .seccion__link {
+  color: #395144;
+}
+.seccion__link p {
   color: #395144;
 }
 
@@ -156,6 +160,12 @@ footer form input {
   background-color: #D9D9D9;
   border: solid;
   border-color: #AA8B56;
+}
+.tarjeta__descripcion {
+  font-size: 1rem;
+  width: auto;
+  height: 50px;
+  text-align: center;
 }
 
 .proyectos__presentacion {
